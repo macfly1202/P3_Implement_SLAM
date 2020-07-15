@@ -100,7 +100,7 @@ class robot:
     #
     def make_landmarks(self, num_landmarks):
         self.landmarks = []
-        for i in range(num_landmarks):
+        for _ in range(num_landmarks):
             self.landmarks.append([round(random.random() * self.world_size),
                                    round(random.random() * self.world_size)])
         self.num_landmarks = num_landmarks
